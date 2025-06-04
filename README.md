@@ -33,3 +33,22 @@ El proyecto está estructurado en tres packages principales:
 
 1. **Compilar el proyecto**  
    Navega al directorio raíz del proyecto y compila todas las clases. Por ejemplo, si deseas que las clases compiladas
+
+## Plan de Pruebas e Incidencias
+
+### Objetivo
+Validar la correcta gestión de turnos de pacientes, asegurando que la prioridad funcione correctamente y los métodos sean robustos.
+
+### Casos de Prueba
+- Agregar paciente y verificar que sea listado correctamente.
+- Obtener el siguiente paciente de acuerdo a la prioridad.
+- Cancelar un turno y confirmar que ya no aparece en la lista.
+- Atender pacientes en orden correcto.
+- Contar pacientes por prioridad.
+
+### Registro de Errores
+| 04/06/2025 | Se eliminaban pacientes incorrectos al atender | Ajustado método `atenderPaciente()`
+| 04/06/2025 | `obtenerCantidadPorPrioridad()` devolvía valores incorrectos | Se corrigió lógica de conteo
+
+### Cobertura
+Se han probado todos los métodos principales mediante pruebas unitarias y pruebas manuales.
